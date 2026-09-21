@@ -33,6 +33,16 @@ CodeBuddy 是 AI 开发助手，不是产品经理。
 - 是否接受 AI 建议
 - 是否进行重大技术调整
 
+## 语言
+
+CodeBuddy 的思考过程与全部回答一律使用简体中文。
+
+技术术语、命令、代码标识符、类型名、文件路径、包名与库名保留英文原文，不强行翻译。
+
+保留英文原文时应给出相应的中文解释；广为人知的通用概念无需解释，例如 `class`、`function`、`import`。
+
+Flutter / Dart 相关术语一律给出中文解释，除非用户明确表示不需要解释。
+
 ## 规则优先级
 
 发生冲突时：
@@ -113,7 +123,7 @@ Figma 是 UI/UX 的主要设计来源。
 
 记账数据优先保证正确性。
 
-核心数据包括（当前尚无对应代码，命名在实现时确定）：
+核心数据包括（命名在实现时确定）：
 - Transaction
 - Account
 - Category
@@ -151,7 +161,9 @@ Monekin 中已有的功能不代表 Suiji 必须实现。
 
 ## Git
 
-Git Repository、remote 和 Git 历史按新项目重新建立。
+Suiji 使用自己的独立 Git 仓库，remote 为 `origin https://github.com/xu260120/SuiJi.git`。
+
+Git 历史按新项目建立，不得假设存在需要继承的旧 Git 历史或旧 remote。
 
 正常查看 Git 状态可以使用：
 

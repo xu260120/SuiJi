@@ -187,21 +187,19 @@ AI 可以发现规则缺失、规则冲突、规则不合理、新场景没有�
 
 ## 开发环境
 
-本节记录本机开发环境现状，便于了解能力边界。
-
-采集日期：2026-09-09，部分条目于 2026-09-21 复核。
+本节记录本机开发环境，作为能力边界与命令选择的依据。
 
 | 工具 | 版本 / 状态 |
 |---|---|
-| Git | 2.50.1.windows.1（2026-09-21 复核） |
-| Node.js | v22.20.0（2026-09-21 复核） |
-| VS Code | 1.122.1（2026-09-21 复核） |
-| Flutter SDK | 3.44.1，D:\Software\flutter（2026-09-21 复核） |
-| Dart SDK | 3.12.1，随 Flutter 附带（2026-09-21 复核） |
-| Android SDK | D:\Software\Android_Studio\Software\SDK；android-36、build-tools 36.1.0（2026-09-09 采集） |
-| JDK | 系统 JDK 21.0.5，D:\Software\java（2026-09-09 采集） |
-| Windows 桌面工具链 | VS 生成工具 2022 17.14，可构建 Windows 桌面版（2026-09-09 采集） |
-| Flutter 镜像 | 已启用 pub.flutter-io.cn、storage.flutter-io.cn（2026-09-09 采集） |
-| 环境变量 | ANDROID_HOME、JAVA_HOME、PUB_CACHE=D:\Software\cache\pub（2026-09-21 复核） |
+| Git | 2.50.1.windows.1 |
+| Node.js | v22.20.0 |
+| VS Code | 1.122.1 |
+| Flutter SDK | 3.44.1，D:\Software\flutter |
+| Dart SDK | 3.12.1，随 Flutter 附带 |
+| Android SDK | D:\Software\Android_Studio\Software\SDK；android-36、build-tools 36.1.0 |
+| JDK | 系统 JDK 21.0.5，D:\Software\java |
+| Windows 桌面工具链 | VS 生成工具 2022 17.14，可构建 Windows 桌面版 |
+| Flutter 镜像 | 已启用 pub.flutter-io.cn、storage.flutter-io.cn |
+| 环境变量 | ANDROID_HOME、JAVA_HOME、PUB_CACHE=D:\Software\cache\pub |
 
-标注为 2026-09-09 采集的条目未经本次复核。
+环境版本以本机实际为准；执行命令前需要确认版本时，应实际运行工具查看，不得依赖本表推断。

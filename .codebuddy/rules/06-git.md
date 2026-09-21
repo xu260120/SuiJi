@@ -42,7 +42,7 @@ Suiji：
 
 ```text
 自己的独立 Git 仓库
-origin: https://github.com/xu260120/SuiJi.git（已推送分支：main、dev）
+origin: https://github.com/xu260120/SuiJi.git
 ```
 
 Suiji 的代码长期在自己的仓库中维护。

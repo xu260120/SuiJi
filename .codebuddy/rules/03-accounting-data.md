@@ -32,7 +32,7 @@ Suiji 至少涉及：
 - 备注
 - 统计数据
 
-当前项目尚无代码，具体类名与表结构在实现时确定。`10-architecture.md` 中的 Transaction / Account / Category / Asset / Statistics 与上述业务概念对应。
+具体类名与表结构在实现时确定。`10-architecture.md` 中的 Transaction / Account / Category / Asset / Statistics 与上述业务概念对应。
 
 ---
 
