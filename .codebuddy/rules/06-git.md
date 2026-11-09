@@ -165,6 +165,8 @@ git reset --hard
 
 ## Commit
 
+未经用户明确要求，不得因为「任务完成」就自动创建 commit 或 push。任务完成后按 `11-change-control.md` 如实报告即可。
+
 Commit message 使用中文撰写。
 
 AI 可以根据用户要求帮助：

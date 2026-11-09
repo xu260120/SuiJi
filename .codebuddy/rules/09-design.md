@@ -1,8 +1,18 @@
 # 09 - Design Rules
 
-## 设计来源
+## 设计依据
 
-Suiji 的 UI/UX 设计以已经确认的 Figma 设计为主要来源。
+Suiji 的页面结构、布局与交互以**用户已确认的设计产物**为准；颜色取值以项目 Color Tokens 为准（见下节）。
+
+页面视觉效果可以由 AI 或专家团队产出草案，但未经用户确认不得视为已确认设计，也不得直接落地为最终实现。
+
+这类草案属于非自主开发内容，按 `08-ai-behavior.md`「非自主开发内容的参考来源」标注来源并在报告中呈现。
+
+没有已确认的设计产物时，不得凭记忆、通用模板或参考项目的默认样式自行定义设计参数；应先提出方案并等待确认。
+
+不得以 Flutter 实现方便为由改变已确认的设计。
+
+## 设计范围
 
 设计范围包括：
 
@@ -17,27 +27,28 @@ Suiji 的 UI/UX 设计以已经确认的 Figma 设计为主要来源。
 - Light / Dark Theme
 - Design Tokens
 
-Figma 不是唯一来源时，以用户已确认的设计为准，不得以 Monekin 的默认设计替代（见 `02-product.md`）。
-
 ---
 
 ## Design Tokens
 
-如果项目中存在 Design Token：
+项目 Color Tokens 位于 suiji 仓库之外的工作区根目录，**未被 Git 跟踪**：
+
+```text
+D:\lx\Desktop\suijiProject\记账App_Color_Tokens_Light.json
+D:\lx\Desktop\suijiProject\记账App_Color_Tokens_Dark.json
+D:\lx\Desktop\suijiProject\记账App_Color_Tokens_Reference.json
+```
+
+- `Light` / `Dark`：Light / Dark 主题下各语义色的取值，使用 DTCG `$value` 结构。
+- `Reference`：同一组色值的 Light / Dark 对照表，结构为 `{light, dark}`，用于逐项核对一致性。
 
 > 优先读取 Token，不要凭记忆重新定义设计参数。
 
 颜色、间距、圆角、字体等应尽量通过统一 Token 使用。
 
----
+三份文件出现色值不一致时，不自行择一：指出差异并等待用户确认（见 `01-project.md`）。改动 Token 时必须同步更新三份文件并复核一致性。
 
-## Figma 与 Flutter
-
-Figma 表达产品应该怎样呈现和交互。
-
-Flutter 负责实现实际运行行为。
-
-不得因为 Flutter 实现方便而随意改变已经确认的设计。
+这三份文件不在 suiji 仓库内。克隆仓库或在新环境工作时须先确认它们是否存在；不存在时明确告知用户，不得凭记忆补造色值。
 
 ---
 

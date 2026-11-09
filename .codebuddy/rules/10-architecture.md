@@ -40,7 +40,7 @@ Data
 
 ## 领域边界
 
-核心领域至少需要能够清晰表达（`03-accounting-data.md` 中的业务概念与此对应）：
+核心领域概念以本节清单为准（`03-accounting-data.md` 中的业务概念与此对应），至少包括：
 
 - Transaction：账单 / 交易
 - Account：账户
@@ -51,6 +51,8 @@ Data
 - Statistics：统计
 
 核心业务逻辑不得散落在大量 UI Widget 中。
+
+修改其中任一核心领域时，按 `03-accounting-data.md` 与 `07-testing.md` 检查相关数据链路与回归范围，不能只验证被修改的模块。
 
 数据流必须与 `03-accounting-data.md` 的核心业务关系保持一致：
 
@@ -84,7 +86,7 @@ Data
 
 但架构、模块划分和代码由 Suiji 自行决定（见 `05-monekin.md`）。
 
-添加第三方依赖前按 `04-development.md` 判断必要性、license 与影响。
+添加第三方依赖前按 `04-development.md` 判断必要性、license 与影响，并按 `08-ai-behavior.md` 第一时间告知用户版权与许可风险；依赖来源按同文件「非自主开发内容的参考来源」在报告中标注。
 
 ---
 

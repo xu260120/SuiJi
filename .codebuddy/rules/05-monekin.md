@@ -17,7 +17,7 @@ Monekin 不是 Suiji 的：
 
 ---
 
-## 核心原则
+## 独立实现边界
 
 Suiji 的代码全部自行实现。
 
@@ -25,15 +25,21 @@ Monekin 的代码、文件结构、数据库 Schema、美术资产不得进入 S
 
 ---
 
-## 参考目录
+## 项目层次与参考目录
 
-Monekin 源码放在 Suiji 仓库之外的独立参考目录：
+**Suiji（随记账）是用户自己的项目**，不是任何外部项目的分支、衍生或延续。
 
-```text
-D:\lx\Desktop\suijiProject\monekin-ref
-```
+必须区分三层，不得混用：
 
-参考目录不属于 Suiji 仓库，也不进入 Suiji Git 历史。
+1. **产品项目**：`D:\lx\Desktop\suijiProject\suiji`，Suiji 唯一产品仓库，独立 Git 仓库，origin 为 `https://github.com/xu260120/SuiJi.git`；分支模型见 `06-git.md`，本文件不复述。
+2. **外部参考**：GitHub 上的 Monekin 开源仓库 `https://github.com/enrique-lozano/Monekin`（AGPL-3.0），是外部项目，不是 Suiji 的组成部分、上游项目（upstream）或 Git 远程（remote）。
+3. **本地只读副本**：`D:\lx\Desktop\suijiProject\monekin-ref`，上述外部仓库的克隆副本，自带 `.git` 的独立仓库，仅用于学习、分析和比较。
+
+本地副本与 `suiji/` 同处 `suijiProject/` 工作区根目录：**在 suiji 仓库之外，但在同一工作区内**。
+
+工作区根目录本身不是 Git 仓库，`suiji/` 与 `monekin-ref/` 各是独立仓库。在根目录执行 git 命令前必须确认作用域，不得误把参考副本当作 Suiji 仓库操作，也不得据此推断两者存在 Git 关系。
+
+Monekin 与本地副本都不参与 Suiji 的依赖、代码、Schema、资源、项目结构与版本管理；参考目录不属于 Suiji 仓库，也不进入 Suiji Git 历史。
 
 不得将其作为 package、path 依赖或任何形式引入 `pubspec.yaml`。
 
@@ -48,6 +54,8 @@ D:\lx\Desktop\suijiProject\monekin-ref
 - 记账类型与核心流程设计
 - 技术选型（drift、fl_chart 等公开通用库）
 - 大致的数据与模块划分思路
+
+即使只借鉴思路而未复制代码，也须按 `08-ai-behavior.md`「非自主开发内容的参考来源」标注参考来源。
 
 ---
 
@@ -99,6 +107,8 @@ CodeBuddy 不得自动向参考目录拉取或写入。
 - 区分已确认事实与法律判断
 - 不得把 AI 推测描述为法律结论
 - 必要时进一步核对许可证原文或寻求专业意见
+
+参考 Monekin 或任何开源产品前，按 `08-ai-behavior.md`「版权与许可：第一时间告知」主动向用户说明版权与许可风险；参考了什么按同文件「非自主开发内容的参考来源」标注来源。本节只规定判断口径，不另定义告知时序与标注规则。
 
 ---
 

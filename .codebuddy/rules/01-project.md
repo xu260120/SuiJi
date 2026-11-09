@@ -25,7 +25,7 @@ Suiji 是一款从零开发的个人智能记账 App。
 
 ### Monekin
 
-Suiji 的学习参考项目。
+GitHub 上的外部开源参考仓库，不是 Suiji 的组成部分、上游项目或 Git 远程。
 
 主要作用：
 
@@ -34,6 +34,8 @@ Suiji 的学习参考项目。
 - 帮助理解「记账 App 应该怎么设计」
 
 Monekin 不是 Suiji 的代码来源，其代码不进入 Suiji 仓库。
+
+本机 `D:\lx\Desktop\suijiProject\monekin-ref` 是其只读克隆副本，位于 suiji 仓库之外、与 suiji 同处工作区根目录；工作区根目录本身不是 Git 仓库（见 `05-monekin.md`、`06-git.md`）。
 
 ### CodeBuddy
 
@@ -63,7 +65,7 @@ AI 不得因为技术上认为某方案更合理，就自行改变已经确认�
 2. `.codebuddy/rules/` 中适用的项目规则
 3. 已确认的产品与设计规范
 4. 当前项目的实际代码与配置
-5. Monekin 参考实现的设计思路
+5. 外部参考资料（含 Monekin 参考实现的设计思路）
 6. AI 的一般技术建议
 
 不能因为某个功能在 Monekin 中不存在，就认为 Suiji 不能拥有该功能。
@@ -146,12 +148,16 @@ AI 可以提出：
 - `05-monekin.md`：Monekin 参考与独立实现边界
 - `06-git.md`：Git 与仓库管理
 - `07-testing.md`：测试与验证
-- `08-ai-behavior.md`：AI 行为限制
+- `08-ai-behavior.md`：AI 行为限制、版权许可即时告知与参考来源标注
 - `09-design.md`：设计与 Design Token
 - `10-architecture.md`：架构与技术边界
-- `11-change-control.md`：变更控制与报告
+- `11-change-control.md`：变更控制与统一报告格式（含参考来源与许可）
 
 这些规则属于 Suiji 项目本身。
+
+`CODEBUDDY.md` 只是入口索引，说明身份、语言、优先级与本索引，不定义细则。
+
+`.codebuddy/rules/` 是 Suiji 规则的唯一权威源。两者表述不一致时，以 rules/ 为准，同时指出差异；不因此阻塞任务。
 
 ---
 
